@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+       
+         article h2 {
+            color: darkblue;
+        }
+
+       
+        Nav>li:first-child {
+            font-weight:bold;
+        }
+
+       
+        h2 + p {
+            font-style: italic;
+        } 
+
+        li[class=highlight] {
+            color:green;
+        } 
+
+         
+        a[href^="https"]::after {
+            content: " (secure)";
+        } 
+        table{
+            width:500px;
+            height:250px
+        }
+        tr,td,th,table{
+            border:4px solid black;
+            border-collapse: collapse;
+        }
+
+      
+        tr:nth-child(even) {
+            background-color:gray;
+        } 
+       
+        
+        h3{
+            display:flex;
+            border:5px solid gray;
+            border-radius:10px;
+            width:5%;
+            background-color: black;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Descendant selector</h1>
+<section>
+    <article>
+        <h2>descendant selector</h2>
+        <h2>welcome</h2>
+    </article>
+    <h2>outside article</h2>
+ </section>
+   
+    <h1>child selector</h1>
+    <nav>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </nav>
+   
+    <h1>adjacent sibling selector</h1>
+    <p>adjacent sibling</p>
+    <h2>heading tag</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, nisi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dignissimos?</p>
+   
+    <h1>general sibling selector</h1>
+    <li class="highlight">one</li>
+    <li class="highlight">two</li>
+    <li>three</li>
+   
+    <h1>attribute selector</h1>
+    <a href="https"></a>
+    <a href="dumy.html"></a>
+    <a href="https"></a>
+   
+    <h1>pseudo class selector</h1>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <th>kavin</th>
+            <th>22</th>
+        </tr>
+        <tr>
+            <th>kumar</th>
+            <th>23</th>
+        </tr>
+        <tr>
+            <th>ratheesh</th>
+            <th>24</th>
+        </tr>
+    </table>
+
+
+</body>
+</html>
